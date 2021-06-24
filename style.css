@@ -44,18 +44,19 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  /* bottom: -50%; */
-  /* right: -20%; */
 }
 
 .card {
   border-radius: 18px;
   overflow: hidden;
   z-index: 99;
+  min-width: 220px;
 }
 
 .card .cardHead img {
   display: block;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .cardBody {
@@ -109,4 +110,16 @@ body {
 .cardStats .description {
   font-size: 12px;
   color: var(--darkGrey);
+}
+
+@media only screen and (max-width: 375px) {
+  .card {
+    margin: 0 10px;
+  }
+
+  .cardBody img {
+    width: 90px;
+    height: 90px;
+    margin-top: -45px;
+  }
 }
