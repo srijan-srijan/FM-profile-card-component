@@ -51,6 +51,7 @@ body {
   overflow: hidden;
   z-index: 99;
   min-width: 220px;
+  box-shadow: 1px -1px 45px 0px rgba(0, 0, 0, 0.5);
 }
 
 .card .cardHead img {
